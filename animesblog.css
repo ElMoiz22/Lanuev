@@ -1,0 +1,79 @@
+
+  .galeria2 {
+    border: 10px solid #b3079e00;
+  }
+  
+  .logowall{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .logowall img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: .1s ease-in all;
+  }
+  
+  .logowall img:hover{
+    filter: saturate(100%);
+    transform: scale(1.07);
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .logowall{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .logowall{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+    
+  @media only screen and (max-width: 450px) {
+    .logowall{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F9F9F9;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 18px;
+    outline: none;
+    width: 70%;
+  }
+  
+  button {
+    background-color: #c7157d;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ea5d2e;
+  }
+  
+  #searchInput:focus {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
